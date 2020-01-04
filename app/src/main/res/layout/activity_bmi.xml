@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:layout_marginTop="40dp">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/rbt_male"
+                android:text="Male"
+                android:textSize="30sp"
+                android:textColor="#000"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/rbt_female"
+                android:text="Female"
+                android:textSize="30sp"
+                android:textColor="#000"
+                android:checked="true"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_h"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="身高:"
+        android:drawableLeft="@drawable/bg_height"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
+        android:inputType="number"
+        android:textSize="30sp"
+        />
+
+    <EditText
+        android:id="@+id/et_w"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_h"
+        android:hint="體重:"
+        android:drawableLeft="@drawable/bg_weight"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
+        android:inputType="number"
+        android:textSize="30sp"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_w"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="40dp">
+
+        <Button
+            android:id="@+id/bt_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btnsub"
+            android:text="Submit"
+            android:padding="10dp"
+            android:textSize="30sp"
+            android:textColor="#F1EDED"/>
+
+        <Button
+            android:id="@+id/bt_can"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btncan"
+            android:layout_marginLeft="50dp"
+            android:text="Cancel"
+            android:padding="10dp"
+            android:textSize="30sp"
+            android:textColor="#F1EDED"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/tv_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="Result:"
+            android:textSize="30sp"
+            android:padding="10dp"
+            android:background="#00D455"
+            />
+
+        <TextView
+            android:id="@+id/tv_4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="Diagnosis:"
+            android:textSize="30sp"
+            android:padding="10dp"
+            android:background="#00D455"
+            />
+        <Button
+            android:id="@+id/bt_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="back"
+            android:textSize="20sp"
+            android:background="@drawable/bg_btnbg"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
